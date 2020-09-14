@@ -4,6 +4,7 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap");
 html {
   line-height: 1.15;
   /* 1 */
@@ -314,75 +315,179 @@ template {
   width: 1px !important;
   overflow: hidden; }
 
-.tab__content * {
-  -webkit-animation: scale 0.7s ease-in-out;
-  animation: scale 0.7s ease-in-out; }
+h2 {
+  margin: 0;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 44px; }
 
-@-webkit-keyframes scale {
-  0% {
-    transform: scale(0.9);
-    opacity: 0; }
-  50% {
-    transform: scale(1.01);
-    opacity: 0.5; }
-  100% {
-    transform: scale(1);
-    opacity: 1; } }
-
-@keyframes scale {
-  0% {
-    transform: scale(0.9);
-    opacity: 0; }
-  50% {
-    transform: scale(1.01);
-    opacity: 0.5; }
-  100% {
-    transform: scale(1);
-    opacity: 1; } }
-
-.tabs {
-  list-style: none;
-  padding: 0;
+h3 {
   margin: 0; }
 
-.tabs input[type=radio] {
+p {
+  margin: 0; }
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+.tabs__content {
   display: none; }
 
-.tabs label {
-  margin-right: 10px;
-  float: right;
-  color: #000;
-  font-size: 14px;
-  font-weight: normal;
-  text-decoration: none;
-  text-align: center;
-  line-height: 2;
-  cursor: pointer;
-  /* Safari 3.1 to 6.0 */
-  transition: all 0.5s; }
-
-/* .tabs label span {
-  display: none;
-} */
-.tabs label i {
-  padding: 5px;
-  margin-right: 0; }
-
-.tabs label:hover {
-  color: #3498db; }
-
-.tab__content {
-  display: none;
-  width: 100%;
-  float: left;
-  box-sizing: border-box; }
-
-.tabs [id^="tab"]:checked + label {
-  color: #3498db; }
-
-#tab1:checked ~ #tab__content1,
-#tab2:checked ~ #tab__content2,
-#tab3:checked ~ #tab__content3,
-#tab4:checked ~ #tab__content4,
-#tab5:checked ~ #tab__content5 {
+.active {
   display: block; }
+
+.button {
+  display: block;
+  width: 370px;
+  height: 80px;
+  background: linear-gradient(180deg, #4B81E9 0%, #2C65D3 100%);
+  box-shadow: 0px 12px 35px 5px rgba(30, 89, 202, 0.35);
+  border-radius: 3px;
+  font-size: 22px;
+  line-height: 80px;
+  color: #FFFFFF;
+  text-decoration: none;
+  text-align: center; }
+  .button:hover, .button:focus {
+    box-shadow: 0px 12px 20px 10px rgba(30, 89, 202, 0.31); }
+
+body {
+  font-family: "Montserrat", sans-serif;
+  color: #1A1A1A;
+  font-size: 22px;
+  line-height: 29px; }
+
+.header {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.23), rgba(0, 0, 0, 0.23)), linear-gradient(180deg, rgba(9, 16, 85, 0.58) 0%, rgba(4, 15, 35, 0.4872) 64.22%, rgba(0, 12, 36, 0.2784) 100%), url("/images/header/bg-1.jpg") no-repeat 50% 50%;
+  color: #FFFFFF;
+  height: 800px; }
+  .header__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1174px;
+    margin: 0 auto;
+    padding-top: 40px; }
+  .header-contact {
+    display: flex;
+    flex-direction: column; }
+    .header-contact a {
+      color: #FFFFFF;
+      text-decoration: none; }
+      .header-contact a:hover, .header-contact a:active {
+        color: #FB9B21; }
+    .header-contact__phone {
+      font-size: 20px;
+      line-height: 24px;
+      font-weight: 600; }
+    .header-contact__callback {
+      font-size: 15px;
+      line-height: 18px;
+      font-weight: 500;
+      text-align: right; }
+  .header__info {
+    width: 1174px;
+    margin: 0 auto;
+    margin-top: 150px; }
+  .header__title {
+    width: 930px;
+    margin: 0;
+    font-size: 46px;
+    line-height: 60px;
+    font-weight: 700; }
+  .header__text {
+    width: 540px;
+    margin: 0;
+    margin-top: 30px;
+    font-size: 30px;
+    line-height: 37px;
+    font-weight: 500; }
+  .header__button {
+    margin-top: 65px; }
+
+.logo {
+  width: 50px;
+  height: 50px;
+  background-color: #FFFFFF;
+  border-radius: 25px;
+  position: relative; }
+  .logo img {
+    position: absolute;
+    top: 3px; }
+  .logo__name {
+    font-size: 18px;
+    line-height: 20px;
+    color: #0752E4;
+    margin: 0;
+    margin-top: 5px;
+    margin-left: 60px; }
+
+.nav__list {
+  display: flex;
+  width: 434px;
+  font-size: 18px;
+  line-height: 50px; }
+
+.nav__item {
+  margin-right: 40px; }
+  .nav__item:last-child {
+    margin-right: 0; }
+  .nav__item a {
+    color: #FFFFFF;
+    text-decoration: none; }
+    .nav__item a:hover, .nav__item a:active {
+      color: #FB9B21; }
+
+.statistics {
+  position: relative; }
+  .statistics__title {
+    width: 1174px;
+    margin: 0 auto;
+    margin-top: 105px; }
+    .statistics__title .blue {
+      color: #3069D6; }
+  .statistics__list {
+    position: relative;
+    margin-top: 105px;
+    margin-bottom: 105px;
+    display: flex;
+    justify-content: flex-end;
+    width: 1550px;
+    height: 270px;
+    left: calc(50% - 960px);
+    background: #3069D6;
+    color: #FFFFFF; }
+  .statistics__item {
+    width: 235px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border-left: 0.25px solid #FFFFFF;
+    cursor: pointer; }
+    .statistics__item:first-child {
+      border: none; }
+    .statistics__item:hover {
+      background-color: #FFFFFF;
+      color: #3069D6;
+      box-shadow: 0px 5px 18px rgba(102, 102, 102, 0.16); }
+  .statistics__number {
+    font-size: 40px;
+    line-height: 49px;
+    font-weight: 700; }
+  .statistics__text {
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 500; }
+  .statistics__dots {
+    width: 160px;
+    height: 120px;
+    background-image: radial-gradient(#F2F2F2 45%, transparent 45%);
+    background-position: 0 0, 10px 10px;
+    background-size: 20px 20px;
+    position: absolute;
+    right: calc(50% - 653px);
+    bottom: 212px;
+    z-index: -1; }

@@ -12,31 +12,37 @@
 <body>
   <!-- sec-1 -->
   <header class="header">
-    <div class="logo">
-      <img src="" alt="Логотип ООО РТК Логистик">
+    <div class="header__wrapper">
+      <div class="logo">
+        <img src="/images/header/logo.png" alt="Логотип ООО РТК Логистик">
+        <h2 class="logo__name">РТК ЛОГИСТИК</h2>
+      </div>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#">О нас</a></li>
+          <li class="nav__item"><a href="#">Услуги</a></li>
+          <li class="nav__item"><a href="#">Маршруты</a></li>
+          <li class="nav__item"><a href="#">Контакты</a></li>
+        </ul>
+      </nav>
+      <div class="header-contact">
+        <a href="tel:+74997500979" class="header-contact__phone">+7 (499) 750 09 79</a>
+        <a href="" class="header-contact__callback">Заказать звонок</a>
+      </div>
     </div>
-    <nav class="nav">
-      <ul class="nav__list">
-        <li class="nav__item">О нас</li>
-        <li class="nav__item">Услуги</li>
-        <li class="nav__item">Маршруты</li>
-        <li class="nav__item">Контакты</li>
-      </ul>
-    </nav>
-    <div class="header-contact">
-      <a href="tel:+74997500979" class="header-contact__phone">+7 (499) 750 09 79</a>
-      <a href="" class="header-contact__calback">Заказать звонок</a>
+    <div class="header__info">
+      <h1 class="header__title">Железнодорожные<br> и автомобильные грузоперевозки по России и странам СНГ</h1>
+      <p class="header__text">Сопровождение и доставка груза по выгодным условиям </p>
+      <a href="#" class="button  header__button">Доставить груз</a>
     </div>
-    <h1 class="header__title">Железнодорожные и автомобильные грузоперевозки по России и странам СНГ</h1>
-    <p class="header__text">Сопровождение и доставка груза по выгодным условиям </p>
-    <a href="#" class="button  header__button"></a>
+
   </header>
 
   <main id="index">
 
     <!-- sec-2 -->
     <section class="statistics">
-      <h2 class="statistics__title">ООО РТК Логистик на рынке уже <span class="blue">больше 20 лет</span></h2>
+      <h2 class="statistics__title">ООО РТК Логистик<br> на рынке уже <span class="blue">больше 20 лет</span></h2>
       <ul class="statistics__list">
         <li class="statistics__item">
           <h3 class="statistics__number">2000+</h3>
@@ -59,6 +65,7 @@
           <p class="statistics__text">груза за 2019 год</p>
         </li>
       </ul>
+      <div class="statistics__dots"></div>
     </section>
 
     <!-- sec-3 -->
@@ -197,19 +204,16 @@
       <h2 class="faq__title">Вопросы, которые задают наши клиенты</h2>
       <div class="faq__wrapper  tab">
 
-        <input type="radio" name="tabs" id="tab1">
-        <label for="tab1">Как вы можете гарантировать соблюдение сроков доставки?</label>
-        <input type="radio" name="tabs" id="tab2">
-        <label for="tab2">Какие объемы контейнеров вы предоставляете?</label>
-        <input type="radio" name="tabs" id="tab3">
-        <label for="tab3">Есть ли возможность приёма груза на станциях?</label>
-        <input type="radio" name="tabs" id="tab4">
-        <label for="tab4">Какое расписание КП?</label>
-        <input type="radio" name="tabs" id="tab5">
-        <label for="tab5">Есть ли информация по расписанию движения груза?</label>
+        <div class="tabs__list">
+          <div class="tabs__item active" data-tab="0">Как вы можете гарантировать соблюдение сроков доставки?</div>
+          <div class="tabs__item" data-tab="1">Какие объемы контейнеров вы предоставляете?</div>
+          <div class="tabs__item" data-tab="2">Есть ли возможность приёма груза на станциях?</div>
+          <div class="tabs__item" data-tab="3">Какое расписание КП?</div>
+          <div class="tabs__item" data-tab="4">Есть ли информация по расписанию движения груза?</div>
+        </div>
 
-
-        <div id="tab__content1" class="tab__content">
+        <div class="tabs__content active">
+          <img src="http://placekitten.com/842/406" alt="" class="content-img">
           <p class="tab__text">
             Почта России. Отправляем во все регионы РФ. Стоимость от 350 руб (в зависимости от веса и региона цена
             может меняться). Курьер EMS.</p>
@@ -217,6 +221,22 @@
             уточняйте у администратора! сроков доставки?</p>
           <p class="tab__text">Более широкое определение логистики трактует её как учение о планировании, управлени и
             контроле движения материальных</p>
+        </div>
+
+        <div class="tabs__content">
+          <img src="http://placekitten.com/842/405" alt="" class="content-img">
+        </div>
+
+        <div class="tabs__content">
+          <img src="http://placekitten.com/842/407" alt="" class="content-img">
+        </div>
+
+        <div class="tabs__content">
+          <img src="http://placekitten.com/842/404" alt="" class="content-img">
+        </div>
+
+        <div class="tabs__content">
+          <img src="http://placekitten.com/842/408" alt="" class="content-img">
         </div>
 
       </div>
@@ -245,6 +265,7 @@
     </div>
   </footer>
 
+  <script src="js/js.js"></script>
 </body>
 
 </html>

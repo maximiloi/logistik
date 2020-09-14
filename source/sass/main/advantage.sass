@@ -1,0 +1,54 @@
+.advantage
+  padding-top: 105px
+  padding-bottom: 105px
+  &__title
+    width: $desktop-main
+    margin: 0 auto
+    margin-bottom: 85px
+  &__wrapper
+    width: $desktop-main
+    margin: 0 auto
+    display: flex
+  &__list
+    display: flex
+    flex-wrap: wrap
+    align-content: flex-end
+  &__item
+    width: 380px
+    margin-right: 20px
+    margin-bottom: 50px
+    &:nth-child(2n)
+      margin-right: 0
+    &:before
+      //content: '01'
+      color: $blue
+      font-size: 46px
+      line-height: 59px
+      font-weight: 700
+    &:nth-child(1):before
+      content: '01'
+    &:nth-child(2):before
+      content: '02'
+    &:nth-child(3):before
+      content: '03'
+    &:nth-child(4):before
+      content: '04'
+  &__text
+    .orange
+      color: $orange
+  &__document
+    position: relative
+  &__dots
+    width: 80px
+    height: 120px
+    background-image: radial-gradient(#3069D6 45%, transparent 45%)
+    background-position: 0 0, 10px 10px
+    background-size: 20px 20px
+    position: absolute
+    z-index: -1
+    &--up
+      top: -32px
+      left: -40px
+    &--down
+      bottom: -27px
+      right: -37px

@@ -668,3 +668,39 @@ body {
     display: block;
     margin-left: auto;
     margin-right: auto; }
+
+.professionals {
+  width: 1174px;
+  margin: 0 auto;
+  padding-top: 105px;
+  padding-bottom: 105px; }
+  .professionals__title {
+    margin-bottom: 30px; }
+  .professionals__subtext {
+    width: 750px;
+    font-size: 28px;
+    margin-bottom: 50px; }
+  .professionals__list {
+    display: flex;
+    justify-content: space-between; }
+  .professionals__name {
+    margin-top: 30px;
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 700; }
+  .professionals__wrapper {
+    position: relative; }
+  .professionals__dots {
+    position: absolute;
+    width: 120px;
+    height: 80px;
+    background-image: radial-gradient(#f2f2f2 45%, transparent 45%);
+    background-position: 0 0,10px 10px;
+    background-size: 20px 20px;
+    z-index: -1; }
+    .professionals__dots--up {
+      left: calc(50% - 639px);
+      top: -32px; }
+    .professionals__dots--down {
+      right: calc(50% - 639px);
+      bottom: 66px; }

@@ -1,0 +1,60 @@
+.footer
+  background: $blue-bg
+  &__wrapper
+    width: $desktop-main
+    margin: 0 auto
+    display: flex
+    color: $footer-color
+  &-contact
+    width: 50%
+    &__title
+      margin-top: 50px
+      margin-bottom: 20px
+    &__item
+      position: relative
+      width: 280px
+      margin-bottom: 20px
+      margin-left: 30px
+      font-size: 18px
+      line-height: 24px
+      font-weight: 500
+      letter-spacing: -0.01em
+      display: flex
+      flex-direction: column
+      &:before
+        position: absolute
+        top: 4px
+        left: -30px
+      &:nth-child(1):before
+        content: url('/images/footer/pin.svg')
+      &:nth-child(2):before
+        content: url('/images/footer/mail.svg')
+        top: 0
+      &:nth-child(3):before
+        content: url('/images/footer/phone.svg')
+      & a
+        text-decoration: none
+    &__mail,&__phone
+      color: $footer-color
+      &:hover
+        color: $orange
+    &__callback
+      color: $blue
+      font-size: 15px
+      line-height: 18px
+      margin-left: 35px;
+      &:hover
+        color: $orange
+    &__copyring
+      margin-top: 180px
+      font-size: 15px
+      line-height: 20px
+      & a
+        text-decoration: none
+        color: $footer-color
+  &__map
+    position: relative
+    width: 50%
+    overflow: hidden
+    background: rgba(5, 30, 78, 0.43)
+    z-index: -1

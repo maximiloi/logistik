@@ -493,7 +493,7 @@ body {
     z-index: -1; }
 
 .services {
-  background: #E5E5E5;
+  background: rgba(155, 165, 186, 0.1);
   padding-bottom: 100px; }
   .services__title {
     width: 1174px;
@@ -562,7 +562,7 @@ body {
   .advantage__dots {
     width: 80px;
     height: 120px;
-    background-image: radial-gradient(#3069D6 45%, transparent 45%);
+    background-image: radial-gradient(#3069D6 41%, transparent 44%);
     background-position: 0 0, 10px 10px;
     background-size: 20px 20px;
     position: absolute;
@@ -575,7 +575,7 @@ body {
       right: -37px; }
 
 .logic {
-  background: no-repeat calc(50% + 390px) calc(50% - 260px) url(/images/sec-5/bg-pin.png), no-repeat calc(50% + 184px) 22% url(/images/sec-5/bg-line2.png), no-repeat 41% 62% url(/images/sec-5/bg-line.png), no-repeat 2% 138% url(/images/sec-5/bg-line.png), #e5e5e5; }
+  background: no-repeat calc(50% + 390px) calc(50% - 260px) url(/images/sec-5/bg-pin.png), no-repeat calc(50% + 184px) 22% url(/images/sec-5/bg-line2.png), no-repeat 41% 62% url(/images/sec-5/bg-line.png), no-repeat 2% 138% url(/images/sec-5/bg-line.png), rgba(155, 165, 186, 0.1); }
   .logic__title {
     width: 1174px;
     margin: 0 auto;
@@ -704,3 +704,130 @@ body {
     .professionals__dots--down {
       right: calc(50% - 639px);
       bottom: 66px; }
+
+.faq {
+  background: #021D60;
+  color: #FFFFFF;
+  padding-top: 105px; }
+  .faq__title {
+    width: 1174px;
+    margin: 0 auto;
+    margin-bottom: 50px; }
+  .faq__wrapper {
+    width: 1174px;
+    margin: 0 auto;
+    display: flex;
+    border: 1px solid #FFFFFF; }
+
+.tabs__list {
+  width: 50%; }
+
+.tabs__item {
+  position: relative;
+  padding: 40px 150px 40px 40px;
+  border: 1px solid #FFFFFF;
+  cursor: pointer; }
+  .tabs__item:hover {
+    background: #FB9B21; }
+  .tabs__item.active {
+    background: #FB9B21; }
+    .tabs__item.active:before {
+      display: none; }
+    .tabs__item.active:after {
+      position: absolute;
+      content: url("/images/sec-8/arrow-white.svg");
+      top: calc(50% - 12px);
+      right: 58px; }
+  .tabs__item:before {
+    position: absolute;
+    top: calc(50% - 16px);
+    right: 60px;
+    display: block;
+    content: '';
+    width: 36px;
+    height: 36px;
+    border-radius: 18px;
+    background: #FFFFFF; }
+  .tabs__item:after {
+    position: absolute;
+    content: url("/images/sec-8/arrow.svg");
+    top: calc(50% - 6px);
+    right: 65px; }
+  .tabs__item:hover:before {
+    display: none; }
+  .tabs__item:hover:after {
+    position: absolute;
+    content: url("/images/sec-8/arrow-white.svg");
+    top: calc(50% - 12px);
+    right: 58px; }
+
+.tabs__content {
+  height: 100%;
+  padding: 0;
+  border: 1px solid #FFFFFF; }
+
+.tabs__text {
+  margin: 40px;
+  font-size: 20px;
+  line-height: 28px; }
+
+.footer {
+  background: rgba(155, 165, 186, 0.1); }
+  .footer__wrapper {
+    width: 1174px;
+    margin: 0 auto;
+    display: flex;
+    color: #1A1A1A; }
+  .footer-contact {
+    width: 50%; }
+    .footer-contact__title {
+      margin-top: 50px;
+      margin-bottom: 20px; }
+    .footer-contact__item {
+      position: relative;
+      width: 280px;
+      margin-bottom: 20px;
+      margin-left: 30px;
+      font-size: 18px;
+      line-height: 24px;
+      font-weight: 500;
+      letter-spacing: -0.01em;
+      display: flex;
+      flex-direction: column; }
+      .footer-contact__item:before {
+        position: absolute;
+        top: 4px;
+        left: -30px; }
+      .footer-contact__item:nth-child(1):before {
+        content: url("/images/footer/pin.svg"); }
+      .footer-contact__item:nth-child(2):before {
+        content: url("/images/footer/mail.svg");
+        top: 0; }
+      .footer-contact__item:nth-child(3):before {
+        content: url("/images/footer/phone.svg"); }
+      .footer-contact__item a {
+        text-decoration: none; }
+    .footer-contact__mail, .footer-contact__phone {
+      color: #1A1A1A; }
+      .footer-contact__mail:hover, .footer-contact__phone:hover {
+        color: #FB9B21; }
+    .footer-contact__callback {
+      color: #3069D6;
+      font-size: 15px;
+      line-height: 18px;
+      margin-left: 35px; }
+      .footer-contact__callback:hover {
+        color: #FB9B21; }
+    .footer-contact__copyring {
+      margin-top: 180px;
+      font-size: 15px;
+      line-height: 20px; }
+      .footer-contact__copyring a {
+        text-decoration: none;
+        color: #1A1A1A; }
+  .footer__map {
+    position: relative;
+    width: 50%;
+    overflow: hidden;
+    background: rgba(5, 30, 78, 0.43);
+    z-index: -1; }

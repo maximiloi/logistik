@@ -1,0 +1,49 @@
+.tabs
+  &__list
+    width: 50%
+  &__item
+    position: relative
+    padding: 40px 150px 40px 40px
+    border: 1px solid $white
+    cursor: pointer
+    &:hover
+      background: $orange
+    &.active
+      background: $orange
+      &:before
+        display: none
+      &:after
+        position: absolute
+        content: url('/images/sec-8/arrow-white.svg')
+        top: calc(50% - 12px)
+        right: 58px
+    &:before
+      position: absolute
+      top: calc(50% - 16px)
+      right: 60px
+      display: block
+      content: ''
+      width: 36px
+      height: 36px
+      border-radius: 18px
+      background: $white
+    &:after
+      position: absolute
+      content: url('/images/sec-8/arrow.svg')
+      top: calc(50% - 6px)
+      right: 65px
+    &:hover:before
+      display: none
+    &:hover:after
+      position: absolute
+      content: url('/images/sec-8/arrow-white.svg')
+      top: calc(50% - 12px)
+      right: 58px
+  &__content
+    height: 100%
+    padding: 0
+    border: 1px solid $white
+  &__text
+    margin: 40px
+    font-size: 20px
+    line-height: 28px

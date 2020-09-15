@@ -1,5 +1,5 @@
 .logic
-  //background: $blue-bg, url($img + '/sec-5/pin.png')
+  background: no-repeat calc(50% + 390px) calc(50% - 260px) url(/images/sec-5/bg-pin.png),no-repeat calc(50% + 184px) 22% url(/images/sec-5/bg-line2.png),no-repeat 41% 62% url(/images/sec-5/bg-line.png),no-repeat 2% 138% url(/images/sec-5/bg-line.png),#e5e5e5
   &__title
     width: $desktop-main
     margin: 0 auto
@@ -13,10 +13,11 @@
     flex-wrap: wrap
     justify-content: space-between
   &__item
+    position: relative
     width: 350px
     height: 160px
     display: flex
-    align-items: center
+    //align-items: center
     justify-content: center
     margin-bottom: 50px
     padding: 15px
@@ -24,5 +25,30 @@
     border: 0.2px solid #D2DBEC
     box-sizing: border-box
     box-shadow: 0px 16px 40px rgba(131, 158, 213, 0.13)
+    &:nth-child(3n):after
+      display: none
+    &:after
+      position: absolute
+      content: url($img + "/sec-5/arrow.svg")
+      right: -50px
+      top: calc(50% - 12px)
+    &:before
+      position: absolute
+      top: 15px
+      left: calc(50% - 33px)
+    &:nth-child(1):before
+      content: url($img + "/sec-5/ticket.svg")
+    &:nth-child(2):before
+      content: url($img + "/sec-5/calc.svg")
+    &:nth-child(3):before
+      content: url($img + "/sec-5/tablet.svg")
+    &:nth-child(4):before
+      content: url($img + "/sec-5/contract.svg")
+    &:nth-child(5):before
+      content: url($img + "/sec-5/auto.svg")
+    &:nth-child(6):before
+      content: url($img + "/sec-5/auto.svg")
   &__text
+    position: relative
     text-align: center
+    margin-top: 65px

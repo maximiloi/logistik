@@ -574,32 +574,56 @@ body {
       bottom: -27px;
       right: -37px; }
 
-.logic__title {
-  width: 1174px;
-  margin: 0 auto;
-  margin-bottom: 50px;
-  padding-top: 105px; }
-
-.logic__list {
-  width: 1174px;
-  margin: 0 auto;
-  padding-bottom: 105px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between; }
-
-.logic__item {
-  width: 350px;
-  height: 160px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 50px;
-  padding: 15px;
-  background: #FFFFFF;
-  border: 0.2px solid #D2DBEC;
-  box-sizing: border-box;
-  box-shadow: 0px 16px 40px rgba(131, 158, 213, 0.13); }
-
-.logic__text {
-  text-align: center; }
+.logic {
+  background: no-repeat calc(50% + 390px) calc(50% - 260px) url(/images/sec-5/bg-pin.png), no-repeat calc(50% + 184px) 22% url(/images/sec-5/bg-line2.png), no-repeat 41% 62% url(/images/sec-5/bg-line.png), no-repeat 2% 138% url(/images/sec-5/bg-line.png), #e5e5e5; }
+  .logic__title {
+    width: 1174px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    padding-top: 105px; }
+  .logic__list {
+    width: 1174px;
+    margin: 0 auto;
+    padding-bottom: 105px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+  .logic__item {
+    position: relative;
+    width: 350px;
+    height: 160px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    padding: 15px;
+    background: #FFFFFF;
+    border: 0.2px solid #D2DBEC;
+    box-sizing: border-box;
+    box-shadow: 0px 16px 40px rgba(131, 158, 213, 0.13); }
+    .logic__item:nth-child(3n):after {
+      display: none; }
+    .logic__item:after {
+      position: absolute;
+      content: url("/images/sec-5/arrow.svg");
+      right: -50px;
+      top: calc(50% - 12px); }
+    .logic__item:before {
+      position: absolute;
+      top: 15px;
+      left: calc(50% - 33px); }
+    .logic__item:nth-child(1):before {
+      content: url("/images/sec-5/ticket.svg"); }
+    .logic__item:nth-child(2):before {
+      content: url("/images/sec-5/calc.svg"); }
+    .logic__item:nth-child(3):before {
+      content: url("/images/sec-5/tablet.svg"); }
+    .logic__item:nth-child(4):before {
+      content: url("/images/sec-5/contract.svg"); }
+    .logic__item:nth-child(5):before {
+      content: url("/images/sec-5/auto.svg"); }
+    .logic__item:nth-child(6):before {
+      content: url("/images/sec-5/auto.svg"); }
+  .logic__text {
+    position: relative;
+    text-align: center;
+    margin-top: 65px; }

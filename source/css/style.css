@@ -627,3 +627,44 @@ body {
     position: relative;
     text-align: center;
     margin-top: 65px; }
+
+.destinations {
+  background: #021D60;
+  color: #FFFFFF;
+  padding-top: 105px;
+  padding-bottom: 105px; }
+  .destinations__title {
+    text-align: center; }
+  .destinations__subtext {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 28px;
+    line-height: 34px; }
+    .destinations__subtext .orange {
+      color: #FB9B21;
+      font-weight: 700; }
+  .destinations__list {
+    width: 1174px;
+    margin: 0 auto;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between; }
+  .destinations__text {
+    position: relative;
+    margin-left: 28px;
+    margin-bottom: 105px; }
+    .destinations__text:before {
+      position: absolute;
+      top: 8px;
+      left: -27px;
+      display: block;
+      content: '';
+      width: 16px;
+      height: 16px;
+      background: #FB9B21;
+      box-shadow: 0px 0px 20px #FF9E22;
+      border-radius: 8px; }
+  .destinations__images {
+    display: block;
+    margin-left: auto;
+    margin-right: auto; }

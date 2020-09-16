@@ -22,8 +22,10 @@
   "homepage": "https://github.com/maximiloi/starter-template#readme",
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.13.1",
+    "animate.css": "^4.1.1",
     "autoprefixer": "^9.8.4",
     "browser-sync": "^2.26.7",
+    "del": "^5.1.0",
     "gulp": "^4.0.2",
     "gulp-csso": "^4.0.1",
     "gulp-imagemin": "^7.1.0",

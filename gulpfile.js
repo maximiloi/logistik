@@ -6,7 +6,7 @@ var plumber = require("gulp-plumber");
 var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
 var server = require("browser-sync").create();
-//var del = require("del");
+var del = require("del");
 var csso = require('gulp-csso');
 var svgstore = require("gulp-svgstore"); // sprite
 var posthtml = require("gulp-posthtml");
@@ -85,7 +85,7 @@ gulp.task("start", gulp.series("css", "server"));
 gulp.task("copy", function () {
   return gulp.src([
     "source/fonts/**/*.{woff,woff2}",
-    "source/img/**",
+    "source/images/**",
     "source/js/**",
     "source/php/**",
     "source/video/**",

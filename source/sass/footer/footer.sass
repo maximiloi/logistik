@@ -1,5 +1,5 @@
 .footer
-  background: $blue-bg
+  background: no-repeat calc(50% - 190px) calc(50% + 90px) url($img + '/footer/bg-line.png') ,$blue-bg
   &__wrapper
     width: $desktop-main
     margin: 0 auto
@@ -26,12 +26,11 @@
         top: 4px
         left: -30px
       &:nth-child(1):before
-        content: url('/images/footer/pin.svg')
+        content: url($img + '/footer/pin.svg')
       &:nth-child(2):before
-        content: url('/images/footer/mail.svg')
-        top: 0
+        content: url($img + '/footer/mail.svg')
       &:nth-child(3):before
-        content: url('/images/footer/phone.svg')
+        content: url($img + '/footer/phone.svg')
       & a
         text-decoration: none
     &__mail,&__phone

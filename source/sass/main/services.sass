@@ -13,16 +13,82 @@
     justify-content: space-between
     flex-wrap: wrap
   &__item
+    position: relative
     width: 370px
-    height: 450px
+    height: 490px
     margin-bottom: 30px
-    border: 1px solid grey
-    background: $white
+    //border: 1px solid grey
+    background-color: $white
+    overflow: hidden
+    &:nth-child(1)
+      background: no-repeat 50% 10% url($img + '/sec-3/transportation.png'), $white
+    &:nth-child(2)
+      background: no-repeat 50% 10% url($img + '/sec-3/railway.png'), $white
+    &:nth-child(3)
+      background: no-repeat 50% 10% url($img + '/sec-3/oversized.png'), $white
+    &:nth-child(4)
+      background: no-repeat 50% 10% url($img + '/sec-3/special.png'), $white
+    &:nth-child(5)
+      background: no-repeat 50% 10% url($img + '/sec-3/freight-forwarding.png'), $white
+    &:nth-child(6)
+      background: no-repeat 50% 10% url($img + '/sec-3/refrigerator.png'), $white
+    &:hover .services__item-name
+      background-color: #FB9B21;
+    &:hover .services__description
+      transform: translateY(-400px)
+      transition-timing-function: linear
+      transition-duration: 1s
+      //bottom: 50px
+    &-name
+      position: absolute;
+      bottom: -36px;
+      left: -10px;
+      width: 410px;
+      height: 200px;
+      /* border: 1px solid red; */
+      background-color: #3069d6;
+      transform: rotate(-12deg);
+      color: white;
+      cursor: pointer;
     &-title
-      font-weight: 700
+      width: 180px;
+      margin-left: 50px;
+      padding-top: 55px;
       font-size: 24px
-      line-height: 29px
-      background: rgb(48,105,214);
-      background: linear-gradient(343deg, rgba(48,105,214,1) 27%, rgba(246,246,246,0) 27%);
+      font-weight: 700
+      transform: rotate(12deg);
   &__description
-    display: none
+    position: absolute
+    bottom: -350px
+    display: block
+    padding-bottom: 200px
+    background: rgba(5, 31, 81, 0.82)
+    color: $white
+    transform: translateY(0)
+    transition-timing-function: linear
+    transition-duration: 1s
+    &-list
+      padding: 0 16px
+    &-item
+      position: relative
+      margin-left: 20px
+      font-size: 15px;
+      line-height: 26px;
+      font-weight: 500;
+      &:before
+        position: absolute
+        top: 8px
+        left: -15px
+        display: block
+        content: ''
+        width: 10px
+        height: 10px
+        border-radius: 5px
+        background: $orange
+  &__subtitle
+    margin: 0
+    margin-bottom: 13px
+    padding: 27px
+    font-size: 18px
+    line-height: 22px
+    font-weight: 500

@@ -7,6 +7,8 @@
   <title>PTK Логистик</title>
 
   <link rel="stylesheet" href="css/style.min.css">
+
+  <script type="text/javascript" src="js/jquery.min.js"></script>
 </head>
 
 <body>
@@ -14,7 +16,7 @@
   <header class="header">
     <div class="header__wrapper">
       <div class="logo">
-        <img src="/images/header/logo.png" alt="Логотип ООО РТК Логистик">
+        <img src="images/header/logo.png" alt="Логотип ООО РТК Логистик">
         <h2 class="logo__name">РТК ЛОГИСТИК</h2>
       </div>
       <nav class="nav">
@@ -27,7 +29,7 @@
       </nav>
       <div class="header-contact">
         <a href="tel:+74997500979" class="header-contact__phone">+7 (499) 750 09 79</a>
-        <a href="" class="header-contact__callback">Заказать звонок</a>
+        <a class="header-contact__callback  callback">Заказать звонок</a>
       </div>
     </div>
     <div class="header__info">
@@ -76,28 +78,40 @@
           <div class="services__description">
             <h4 class="services__subtitle">Мы предлагаем все виды автоперевозок по Москве и обл.:</h4>
             <ul class="services__description-list">
-              <li class="services__description-item">Газель грузоподъемностью до 1500 кг</li>
+              <li class="services__description-item">Газель грузоподъемностью до 1 500 кг</li>
               <li class="services__description-item">Бычок грузоподъемностью до 5 000 кг</li>
               <li class="services__description-item">КАМАЗ грузоподъемностью до 10 тонн</li>
               <li class="services__description-item">Еврофура с объемом перевозимого груза до 86 кубических метров</li>
             </ul>
           </div>
-          <h3 class="services__item-title">Автомобильные перевозки</h3>
+          <div class="services__item-name">
+            <h3 class="services__item-title">Автомобильные перевозки</h3>
+          </div>
         </li>
         <li class="services__item">
-          <h3 class="services__item-title">Железнодорожные перевозки</h3>
+          <div class="services__item-name">
+            <h3 class="services__item-title">Железнодорожные перевозки</h3>
+          </div>
         </li>
         <li class="services__item">
-          <h3 class="services__item-title">Негабаритные перевозки</h3>
+          <div class="services__item-name">
+            <h3 class="services__item-title">Негабаритные перевозки</h3>
+          </div>
         </li>
         <li class="services__item">
-          <h3 class="services__item-title">Перевозка спецтехники</h3>
+          <div class="services__item-name">
+            <h3 class="services__item-title">Перевозка спецтехники</h3>
+          </div>
         </li>
         <li class="services__item">
-          <h3 class="services__item-title">Экспедирование грузов</h3>
+          <div class="services__item-name">
+            <h3 class="services__item-title">Экспедирование грузов</h3>
+          </div>
         </li>
         <li class="services__item">
-          <h3 class="services__item-title">Перевозка с поддержанием температурного режима</h3>
+          <div class="services__item-name">
+            <h3 class="services__item-title" style="width: 360px;">Перевозка с поддержанием температурного режима</h3>
+          </div>
         </li>
       </ul>
     </section>
@@ -126,7 +140,7 @@
         </ul>
         <div class="advantage__document">
           <div class="advantage__dots  advantage__dots--up"></div>
-          <img src="/images/sec-4/document.jpg" alt="сертификат">
+          <img src="images/sec-4/document.jpg" alt="сертификат">
           <div class="advantage__dots  advantage__dots--down"></div>
         </div>
       </div>
@@ -176,7 +190,7 @@
           <p class="destinations__text">Прибалтика</p>
         </li>
       </ul>
-      <img src="/images/sec-6/bg-1.jpg" alt="Карта России" class="destinations__images">
+      <img src="images/sec-6/bg-1.jpg" alt="Карта России" class="destinations__images">
     </section>
 
     <!-- sec-7 -->
@@ -188,17 +202,17 @@
         <div class="professionals__dots  professionals__dots--up"></div>
         <ul class="professionals__list">
           <li class="professionals__item">
-            <img src="/images/sec-7/people3.jpg" alt="Ольга Петровна">
+            <img src="images/sec-7/people3.jpg" alt="Ольга Петровна">
             <p class="professionals__name">Ольга Петровна</p>
             <p class="professionals__position">Секретарь информация</p>
           </li>
           <li class="professionals__item">
-            <img src="/images/sec-7/people2.jpg" alt="Олег Павлович">
+            <img src="images/sec-7/people2.jpg" alt="Олег Павлович">
             <p class="professionals__name">Олег Павлович</p>
             <p class="professionals__position">Секретарь информация</p>
           </li>
           <li class="professionals__item">
-            <img src="/images/sec-7/people1.jpg" alt="Анна Григорьевна">
+            <img src="images/sec-7/people1.jpg" alt="Анна Григорьевна">
             <p class="professionals__name">Анна Григорьевна</p>
             <p class="professionals__position">Секретарь информация</p>
           </li>
@@ -293,7 +307,7 @@
           </li>
           <li class="footer-contact__item">
             <a href="tel:+74997500979" class="footer-contact__phone">+7 (499) 750 09 79</a>
-            <a href="" class="footer-contact__callback">Заказать звонок</a>
+            <a class="footer-contact__callback  callback">Заказать звонок</a>
           </li>
         </ul>
         <div class="footer-contact__copyring">
@@ -303,11 +317,25 @@
       </section>
       <div class="footer__map">
         <script type="text/javascript" charset="utf-8" async
-          src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A561d0eb5ca524fdc724b063802020ed02febaef44500103e33b1e97d4bb1c444&amp;width=100%25&amp;height=100%&amp;lang=ru_RU&amp;scroll=true"></script>
+          src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A561d0eb5ca524fdc724b063802020ed02febaef44500103e33b1e97d4bb1c444&amp;width=100%25&amp;height=100%&amp;lang=ru_RU&amp;scroll=true">
+          </script>
       </div>
     </div>
   </footer>
+  <section class="modal">
+    <div class="modal__wrapper">
+      <span class="close">&times;</span>
+      <h2 class="modal__title">Оставьте свои контакты</h2>
+      <p class="modal__text">Наш менеджер свяжется с Вами в <span class="orange">течение 15 минут</span></p>
 
+      <form enctype="multipart/form-data" method="post" id="form" class="modal__form">
+        <input placeholder="Имя" name="name" type="text" class="modal__input">
+        <input placeholder="+7 777 77 77 777" name="number" type="text" class="modal__input">
+        <p><input value="Оставить контакты" type="submit" class="button  modal__button"></p>
+      </form>
+    </div>
+  </section>
   <script src="js/js.js"></script>
 </body>
+
 </html>

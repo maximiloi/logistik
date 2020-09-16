@@ -1,9 +1,10 @@
 .destinations
   background: $blue-bg-dark
   color: $white
-  padding-top: 105px
-  padding-bottom: 105px
+  @media (max-width: $desktop-main)
+    padding: 0 20px
   &__title
+    padding-top: 105px
     text-align: center
   &__subtext
     text-align: center
@@ -14,7 +15,7 @@
       color: $orange
       font-weight: 700
   &__list
-    width: $desktop-main
+    max-width: $desktop-main
     margin: 0 auto
     margin-top: 30px
     display: flex
@@ -38,4 +39,8 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
+    padding-bottom: 105px
+    width: 1170px;
+    @media (max-width: $desktop-main)
+      width: 100%
 

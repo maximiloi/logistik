@@ -1,7 +1,7 @@
 .footer
   background: no-repeat calc(50% - 190px) calc(50% + 90px) url($img + '/footer/bg-line.png') ,$blue-bg
   &__wrapper
-    width: $desktop-main
+    max-width: $desktop-main
     margin: 0 auto
     display: flex
     color: $footer-color
@@ -10,6 +10,11 @@
     &__title
       margin-top: 50px
       margin-bottom: 20px
+      @media (max-width: $desktop-main)
+        margin-left: 20px
+    &__list
+      @media (max-width: $desktop-main)
+        margin-left: 20px
     &__item
       position: relative
       width: 280px
@@ -51,6 +56,8 @@
       & a
         text-decoration: none
         color: $footer-color
+      @media (max-width: $desktop-main)
+        margin-left: 20px
   &__map
     position: relative
     width: 50%

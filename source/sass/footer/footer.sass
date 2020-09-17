@@ -5,8 +5,12 @@
     margin: 0 auto
     display: flex
     color: $footer-color
+    @media (max-width: $mobile-width)
+      flex-wrap: wrap-reverse
   &-contact
     width: 50%
+    @media (max-width: $mobile-width)
+      width: 100%
     &__title
       margin-top: 50px
       margin-bottom: 20px
@@ -17,7 +21,7 @@
         margin-left: 20px
     &__item
       position: relative
-      width: 280px
+      max-width: 280px
       margin-bottom: 20px
       margin-left: 30px
       font-size: 18px
@@ -64,3 +68,5 @@
     overflow: hidden
     background: rgba(5, 30, 78, 0.43)
     z-index: -1
+    @media (max-width: $mobile-width)
+      width: 100%

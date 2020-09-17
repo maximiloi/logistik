@@ -1,11 +1,15 @@
 .tabs
   &__list
     width: 50%
+  &__wrapper
+    display: flex
   &__item
     position: relative
     padding: 40px 150px 40px 40px
     border: 1px solid $white
     cursor: pointer
+    @media (max-width: $mobile-width)
+      padding: 40px 100px 40px 40px
     &:hover
       background: $orange
     &.active
@@ -43,6 +47,8 @@
     height: 100%
     padding: 0
     border: 1px solid $white
+    @media (max-width: $mobile-width)
+      height: auto
   &__text
     margin: 40px
     font-size: 20px

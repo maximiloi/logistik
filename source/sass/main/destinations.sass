@@ -11,7 +11,7 @@
     margin-top: 30px
     font-size: 28px
     line-height: 34px
-    & .orange
+    .orange
       color: $orange
       font-weight: 700
   &__list
@@ -20,6 +20,12 @@
     margin-top: 30px
     display: flex
     justify-content: space-between
+    @media (max-width: $mobile-width)
+      flex-wrap: wrap
+      justify-content: space-around
+  &__town
+    @media (max-width: $mobile-width)
+      width: 40%
   &__text
     position: relative
     margin-left: 28px
@@ -35,6 +41,8 @@
       background: $orange
       box-shadow: 0px 0px 20px #FF9E22;
       border-radius: 8px
+    @media (max-width: $mobile-width)
+      margin-bottom: 20px
   &__images
     display: block;
     margin-left: auto;

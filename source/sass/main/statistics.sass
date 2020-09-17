@@ -23,6 +23,9 @@
       left: 0
     @media (max-width: $tablet-width)
       flex-wrap: wrap
+    @media (max-width: $mobile-width)
+      height: auto
+      justify-content: center
   &__item
     width: 235px
     display: flex
@@ -43,6 +46,10 @@
         border-bottom: none
       &:nth-child(5)
         border-bottom: none
+    @media (max-width: $mobile-width)
+      padding: 25px
+      border: none
+      border-top: 0.25px solid $white
   &__number
     font-size: 40px
     line-height: 49px
@@ -64,3 +71,6 @@
     z-index: -1
     @media (max-width: $desktop-main)
       right: calc(50% - 353px)
+    @media (max-width: $mobile-width)
+      right: calc(50% - 153px)
+      bottom: -50px

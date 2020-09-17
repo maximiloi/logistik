@@ -17,7 +17,9 @@
     justify-content: space-between
     flex-wrap: wrap
     @media (max-width: $desktop-main)
-        max-width: 768px
+      max-width: 768px
+    @media (max-width: $mobile-width)
+      justify-content: center
   &__item
     position: relative
     width: 370px
@@ -41,7 +43,7 @@
     &:hover .services__item-name
       background-color: #FB9B21;
     &:hover .services__description
-      transform: translateY(-400px)
+      transform: translateY(-500px)
       transition-timing-function: linear
       transition-duration: 1s
     @media (max-width: $tablet-width)
@@ -52,7 +54,6 @@
       left: -10px;
       width: 410px;
       height: 200px;
-      /* border: 1px solid red; */
       background-color: #3069d6;
       transform: rotate(-12deg);
       color: white;
@@ -63,10 +64,16 @@
       padding-top: 55px;
       font-size: 24px
       font-weight: 700
-      transform: rotate(12deg);
+      transform: rotate(12deg)
+      @media (max-width: $mobile-width)
+        font-size: 22px
+      &--long
+        width: 360px
+        @media (max-width: $mobile-width)
+          width: 280px
   &__description
     position: absolute
-    bottom: -430px
+    bottom: -450px
     display: block
     padding-bottom: 200px
     background: rgba(5, 31, 81, 0.82)

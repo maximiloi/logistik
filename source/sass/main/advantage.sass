@@ -13,14 +13,18 @@
     max-width: $desktop-main
     margin: 0 auto
     display: flex
+    @media (max-width: $mobile-width)
+      flex-wrap: wrap
   &__list
     display: flex
     flex-wrap: wrap
     align-content: flex-end
     @media (max-width: $desktop-main)
       max-width: 50%
+    @media (max-width: $mobile-width)
+      min-width: 100%
   &__item
-    width: 380px
+    max-width: 380px
     margin-right: 20px
     margin-bottom: 50px
     @media (max-width: $desktop-main)
@@ -37,6 +41,8 @@
         position: absolute
         top: 15px
         left: -90px
+      @media (max-width: $mobile-width)
+        top: 4px
     &:nth-child(1):before
       content: '01'
     &:nth-child(2):before
@@ -52,6 +58,9 @@
     position: relative
     @media (max-width: $desktop-main)
       margin: 0 auto
+    @media (max-width: $mobile-width)
+      & img
+        width: 280px
   &__dots
     width: 80px
     height: 120px
@@ -68,3 +77,6 @@
       right: -37px
       @media (max-width: $desktop-main)
         bottom: 65px
+      @media (max-width: $mobile-width)
+        right: -12px
+        bottom: -31px

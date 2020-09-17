@@ -18,6 +18,8 @@
     justify-content: space-between
     @media (max-width: $desktop-main)
       max-width: 760px
+    @media (max-width: $mobile-width)
+      justify-content: center
   &__item
     position: relative
     width: 350px
@@ -31,37 +33,6 @@
     border: 0.2px solid #D2DBEC
     box-sizing: border-box
     box-shadow: 0px 16px 40px rgba(131, 158, 213, 0.13)
-    @media (max-width: $desktop-main)
-      margin-bottom: 70px
-      &:nth-child(1)
-        order: 1
-      &:nth-child(2)
-        order: 2
-        &:nth-child(2):after
-          transform: rotate(90deg)
-          top: calc(100% + 20px)
-          right: 158px
-      &:nth-child(3)
-        order: 4
-        &:nth-child(3):after
-          display: block
-          transform: rotate(180deg)
-          right: calc(50% + 185px);
-      &:nth-child(4)
-        order: 3
-        &:nth-child(4):after
-          transform: rotate(90deg)
-          top: calc(100% + 20px)
-          right: 158px
-      &:nth-child(5)
-        order: 5
-      &:nth-child(6)
-        order: 6
-    @media (max-width: $tablet-width)
-      width: 335px
-      &:nth-child(3)
-        &:nth-child(3):after
-          right: calc(50% + 175px);
     &:nth-child(3n):after
       display: none
     &:after
@@ -85,6 +56,52 @@
       content: url($img + "/sec-5/auto.svg")
     &:nth-child(6):before
       content: url($img + "/sec-5/auto.svg")
+    @media (max-width: $desktop-main)
+      margin-bottom: 70px
+      &:nth-child(1)
+        order: 1
+      &:nth-child(2)
+        order: 2
+        &:nth-child(2):after
+          transform: rotate(90deg)
+          top: calc(100% + 20px)
+          right: calc(50% - 16px)
+      &:nth-child(3)
+        order: 4
+        &:nth-child(3):after
+          display: block
+          transform: rotate(180deg)
+          right: calc(50% + 185px);
+      &:nth-child(4)
+        order: 3
+        &:nth-child(4):after
+          transform: rotate(90deg)
+          top: calc(100% + 20px)
+          right: calc(50% - 16px)
+      &:nth-child(5)
+        order: 5
+      &:nth-child(6)
+        order: 6
+    @media (max-width: $tablet-width)
+      max-width: 335px
+      &:nth-child(3)
+        &:nth-child(3):after
+          right: calc(50% + 175px);
+    @media (max-width: $mobile-width)
+      max-height: 140px
+      &:nth-child(3)
+        order: 3
+      &:nth-child(4)
+        order: 4
+      &:after
+        transform: rotate(90deg)
+        top: calc(100% + 20px)
+        right: calc(50% - 16px)
+      &:nth-child(3)
+        &:nth-child(3):after
+          transform: rotate(90deg)
+          top: calc(100% + 20px);
+          right: calc(50% - 16px)
   &__text
     position: relative
     text-align: center

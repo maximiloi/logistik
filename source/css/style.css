@@ -475,6 +475,9 @@ body {
     @media (max-width: 1174px) {
       .statistics__list {
         left: 0; } }
+    @media (max-width: 768px) {
+      .statistics__list {
+        flex-wrap: wrap; } }
   .statistics__item {
     width: 235px;
     display: flex;
@@ -489,6 +492,13 @@ body {
       background-color: #FFFFFF;
       color: #3069D6;
       box-shadow: 0px 5px 18px rgba(102, 102, 102, 0.16); }
+    @media (max-width: 768px) {
+      .statistics__item {
+        border-bottom: 0.25px solid #FFFFFF; }
+        .statistics__item:nth-child(4) {
+          border-bottom: none; }
+        .statistics__item:nth-child(5) {
+          border-bottom: none; } }
   .statistics__number {
     font-size: 40px;
     line-height: 49px;
@@ -560,6 +570,9 @@ body {
       transform: translateY(-400px);
       transition-timing-function: linear;
       transition-duration: 1s; }
+    @media (max-width: 768px) {
+      .services__item {
+        width: 350px; } }
     .services__item-name {
       position: absolute;
       bottom: -36px;
@@ -580,7 +593,7 @@ body {
       transform: rotate(12deg); }
   .services__description {
     position: absolute;
-    bottom: -350px;
+    bottom: -430px;
     display: block;
     padding-bottom: 200px;
     background: rgba(5, 31, 81, 0.82);
@@ -753,6 +766,11 @@ body {
           order: 5; }
         .logic__item:nth-child(6) {
           order: 6; } }
+    @media (max-width: 768px) {
+      .logic__item {
+        width: 335px; }
+        .logic__item:nth-child(3):nth-child(3):after {
+          right: calc(50% + 175px); } }
     .logic__item:nth-child(3n):after {
       display: none; }
     .logic__item:after {
@@ -848,6 +866,9 @@ body {
   @media (max-width: 1174px) {
     .professionals__item img {
       width: 300px; } }
+  @media (max-width: 768px) {
+    .professionals__item img {
+      width: 230px; } }
   .professionals__name {
     margin-top: 30px;
     font-size: 24px;
@@ -876,6 +897,9 @@ body {
       @media (max-width: 1174px) {
         .professionals__dots--down {
           right: calc(50% - 439px); } }
+      @media (max-width: 768px) {
+        .professionals__dots--down {
+          display: none; } }
 
 .faq {
   background: #021D60;
@@ -885,6 +909,9 @@ body {
     max-width: 1174px;
     margin: 0 auto;
     margin-bottom: 50px; }
+    @media (max-width: 1174px) {
+      .faq__title {
+        text-align: center; } }
   .faq__wrapper {
     max-width: 1174px;
     margin: 0 auto;

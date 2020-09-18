@@ -1,8 +1,8 @@
-.tabs
-  @media (max-width: 666px)
+.accs
+  @media (min-width: 665px)
     display: none
   &__list
-    width: 50%
+    //width: 50%
   &__wrapper
     display: flex
   &__item
@@ -46,12 +46,14 @@
       top: calc(50% - 12px)
       right: 58px
   &__content
-    height: 100%
+    //height: 100%
     padding: 0
     border: 1px solid $white
-    @media (max-width: $mobile-width)
-      height: auto
+    @media (max-width: 665px)
+      display: none
+      &.active
+        display: block
   &__text
-    margin: 40px
-    font-size: 20px
-    line-height: 28px
+    margin: 20px
+    font-size: 16px
+    line-height: 20px

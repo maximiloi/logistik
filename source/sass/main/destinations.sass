@@ -20,8 +20,8 @@
     margin-top: 30px
     display: flex
     justify-content: space-between
+    flex-wrap: wrap
     @media (max-width: 650px)
-      flex-wrap: wrap
       justify-content: space-around
   &__town
     @media (max-width: $mobile-width)
@@ -29,7 +29,7 @@
   &__text
     position: relative
     margin-left: 28px
-    margin-bottom: 105px
+    margin-bottom: 25px
     &:before
       position: absolute
       top: 8px
@@ -41,8 +41,6 @@
       background: $orange
       box-shadow: 0px 0px 20px #FF9E22;
       border-radius: 8px
-    @media (max-width: 650px)
-      margin-bottom: 20px
   &__images
     display: block;
     margin-left: auto;
@@ -51,4 +49,8 @@
     width: 1170px;
     @media (max-width: $desktop-main)
       width: 100%
+  &__map
+    max-width: $desktop-main
+    margin: 0 auto
+    padding-bottom: 105px
 

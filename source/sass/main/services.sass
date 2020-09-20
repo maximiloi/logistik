@@ -30,41 +30,62 @@
     overflow: hidden
     &:nth-child(1)
       background: no-repeat 50% 10% url($img + '/sec-3/transportation.png'), $white
+      &:hover .services__description
+        transform: translateY(-480px)
+        @media (max-width: 320px)
+          transform: translateY(-460px)
     &:nth-child(2)
       background: no-repeat 50% 10% url($img + '/sec-3/railway.png'), $white
+      &:hover .services__description
+        transform: translateY(-555px)
     &:nth-child(3)
       background: no-repeat 50% 10% url($img + '/sec-3/oversized.png'), $white
+      &:hover .services__description
+        transform: translateY(-495px)
+        @media (max-width: 375px)
+          transform: translateY(-450px)
+        @media (max-width: 320px)
+          transform: translateY(-400px)
     &:nth-child(4)
       background: no-repeat 50% 10% url($img + '/sec-3/special.png'), $white
+      &:hover .services__description
+        transform: translateY(-535px)
+        @media (max-width: 320px)
+          transform: translateY(-480px)
     &:nth-child(5)
       background: no-repeat 50% 10% url($img + '/sec-3/freight-forwarding.png'), $white
+      &:hover .services__description
+        transform: translateY(-615px)
+        @media (max-width: 320px)
+          transform: translateY(-580px)
     &:nth-child(6)
       background: no-repeat 50% 10% url($img + '/sec-3/refrigerator.png'), $white
+      &:hover .services__description
+        transform: translateY(-610px)
     &:hover .services__item-name
       background-color: #FB9B21;
     &:hover .services__description
-      transform: translateY(-500px)
       transition-timing-function: linear
       transition-duration: 1s
     @media (max-width: $tablet-width)
       width: 350px
     &-name
       position: absolute;
-      bottom: -36px;
+      bottom: -60px;
       left: -10px;
       width: 410px;
       height: 200px;
       background-color: #3069d6;
-      transform: rotate(-12deg);
+      transform: rotate(-7deg);
       color: white;
       cursor: pointer;
     &-title
       width: 180px;
-      margin-left: 50px;
-      padding-top: 55px;
+      margin-left: 38px;
+      padding-top: 32px;
       font-size: 24px
       font-weight: 700
-      transform: rotate(12deg)
+      transform: rotate(7deg)
       @media (max-width: $mobile-width)
         font-size: 22px
       &--long
@@ -73,7 +94,7 @@
           width: 280px
   &__description
     position: absolute
-    bottom: -450px
+    bottom: -520px
     display: block
     padding-bottom: 200px
     background: rgba(5, 31, 81, 0.82)
@@ -86,12 +107,12 @@
     &-item
       position: relative
       margin-left: 20px
-      font-size: 15px;
-      line-height: 26px;
+      font-size: 14px;
+      line-height: 20px;
       font-weight: 500;
       &:before
         position: absolute
-        top: 8px
+        top: 4px
         left: -15px
         display: block
         content: ''
@@ -101,8 +122,9 @@
         background: $orange
   &__subtitle
     margin: 0
-    margin-bottom: 13px
+    //margin-bottom: 13px
     padding: 27px
-    font-size: 18px
-    line-height: 22px
+    padding-bottom: 10px
+    font-size: 16px
+    line-height: 20px
     font-weight: 500

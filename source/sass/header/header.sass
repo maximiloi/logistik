@@ -5,15 +5,24 @@
   @media (max-width: $desktop-main)
     padding: 0 20px
   &__wrapper
-    display: flex
-    justify-content: space-between
-    align-items: center
     max-width: 1174px
     margin: 0 auto
     padding-top: 40px
+    display: flex
+    align-items: center
+    justify-content: space-between
+    @media (max-width: $tablet-width)
+      flex-direction: column
+      align-items: normal
+  &__logo
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin-bottom: 20px
   &-contact
     display: flex
     flex-direction: column
+    align-items: flex-end
     a
       color: $white
       text-decoration: none
@@ -33,6 +42,10 @@
     max-width: 1174px
     margin: 0 auto
     margin-top: 150px
+    @media (max-width: $tablet-width)
+      margin-top: 80px
+    @media (max-width: 450px)
+      margin-top: 150px
   &__title
     max-width: 930px
     margin: 0

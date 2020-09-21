@@ -1,7 +1,6 @@
 .nav
   &__list
     display: flex
-    width: 434px
     font-size: 18px
     line-height: 50px
     @media (max-width: 450px)
@@ -12,6 +11,8 @@
       background: rgba(0,0,0,.9)
   &__item
     margin-right: 40px
+    @media (max-width: $tablet-width)
+      margin-right: 15px
     @media (max-width: 450px)
       margin-right: 0
       border: 1px solid grey
